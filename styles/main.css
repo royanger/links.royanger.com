@@ -1,0 +1,40 @@
+body {
+  background: lightskyblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  border: 1px solid red;
+  max-width: 350px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.35rem;
+}
+
+.links {
+  margin: 1rem;
+}
+
+.links > div {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.links > div > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
