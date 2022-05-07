@@ -5,8 +5,14 @@ body {
 
 .container {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .content {
@@ -15,11 +21,20 @@ body {
   background-color: darkblue;
   padding: 1.5rem;
   color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
   background: rgb(15, 96, 155);
+  background: -o-radial-gradient(
+    circle,
+    rgba(15, 96, 155, 1) 0%,
+    rgba(0, 62, 107, 1) 100%,
+    rgba(15, 96, 155, 1) 100%
+  );
   background: radial-gradient(
     circle,
     rgba(15, 96, 155, 1) 0%,
@@ -47,8 +62,14 @@ p {
 }
 
 .links > div > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 4rem;
   margin-bottom: 1rem;
@@ -63,7 +84,11 @@ p {
 }
 .links > div > a > div {
   width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .links > div > a div > img {
