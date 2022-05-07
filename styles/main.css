@@ -1,25 +1,42 @@
 body {
-  background: lightskyblue;
+  background: #dceefb;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-  border: 1px solid red;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .content {
-  border: 1px solid red;
+  border-radius: 10px;
   max-width: 350px;
+  background-color: darkblue;
+  padding: 1.5rem;
+  color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+
+  background: rgb(15, 96, 155);
+  background: radial-gradient(
+    circle,
+    rgba(15, 96, 155, 1) 0%,
+    rgba(0, 62, 107, 1) 100%,
+    rgba(15, 96, 155, 1) 100%
+  );
 }
 
 h1 {
   font-size: 3rem;
+  display: block;
+  text-align: center;
 }
-h2 {
-  font-size: 1.35rem;
+p {
+  font-size: 1.15rem;
 }
 
 .links {
@@ -37,4 +54,22 @@ h2 {
   align-items: center;
   height: 4rem;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #243b53;
+}
+.links > div > a:hover {
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+}
+.links > div > a > div {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+.links > div > a div > img {
+  width: 35px;
+  height: auto;
+  margin-right: 1.25rem;
 }
